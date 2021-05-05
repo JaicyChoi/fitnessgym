@@ -1,3 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+
 body{
+    position: relative;
+    float: left;
+    width: 100%;
     background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.hidden{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+}
+header{
+    position: relative;
+    float: left;
+    width: 100%;
+    background: url(../img/main_img1.jpg) no-repeat center;
+    background-size: cover;
+}
+.nav_bg{
+    position: relative;
+    float: left;
+    background-color: black;
+    width: 100%;
+    margin-top: 40px;
+}
+.nav_wrapper{
+    width: 1200px;
+    position: relative;
+    float: left;
+    left: 50%;
+    height: 55px;
+    transform: translateX(-50%);
+/*     background-color: red; */
+}
+.logo{
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translateY(-45%);
+}
+.pc_nav{
+    font-size: 1.5em;
+}
+.main_menu{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main_menu li{
+    position: relative;
+    float: left;
+    margin-right: 85px;
+}
+.main_menu li:last-child{
+    margin-right: 0;
+}
+.main_menu li a{
+    color: #3ea2d8;
+    text-decoration: none;
+}
+.header_content{
+    position: relative;
+    float: left;
+    margin-top: 295px;
+    padding-bottom: 165px;
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+/*     background-color: gray; */
+    color: white;
+}
+.intro_wrapper{
+    position: relative;
+    float: left;
+    width: 100%;
+/*     background-color: red; */
+}
+.intro{
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Catamaran', sans-serif;
+    font-size: 11em;
+    font-weight: bold;
+    letter-spacing: -3px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: white;
+/*     background-color: blue; */
+}
+.intro_text_wrapper{
+    position: relative;
+    float: left;
+    margin-top: 65px;
+    width: 100%;
+/*     background-color: red; */
+}
+.intro_text{
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.25em;
+    line-height: 1.25em;
+    width: 65%;
+    text-align: center;
+    font-weight: 300;
+/*     background-color: blue; */
+}
+.intro_button{
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 260px;
+    height: 55px;
+    border: none;
+    border-radius: 23px;
+    color: #3ea2d8;
+    font-size: 1.5em;
+    font-weight: 500;
+    cursor: pointer;
 }
