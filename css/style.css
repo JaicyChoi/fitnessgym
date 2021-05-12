@@ -62,7 +62,7 @@ header{
     margin-right: 0;
 }
 .main_menu li a{
-    color: #3ea2d8;
+    color: #00c0ff;
     text-decoration: none;
 }
 .header_content{
@@ -126,9 +126,9 @@ header{
     height: 55px;
     border: none;
     border-radius: 23px;
-    color: #3ea2d8;
+    color: #00c0ff;
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
 }
 .content{
@@ -141,8 +141,6 @@ header{
     position: relative;
     float: left;
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: black;
 }
 .section1_wrapper1{
@@ -161,7 +159,7 @@ header{
     margin: 170px 0 170px 0;
     text-align: center;
     width: 74%;
-    color: #3ea2d8;
+    color: #00c0ff;
 /*     background-color: white; */
 }
 .section1_textbox_title{
@@ -209,4 +207,70 @@ header{
     font-weight: 300;
     line-height: 1.5em;
     letter-spacing: 1px;
+}
+.section2{
+    position: relative;
+    float: left;
+    width: 100%;
+    background: url(../img/main_img2.jpg) no-repeat 50% 0;
+    background-size: cover;
+}
+.section2_wrapper{
+    position: relative;
+    float: left;
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 95px 0 135px;
+}
+.section2_textbox{
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    color: #00c0ff;
+    margin-bottom: 90px;
+}
+.section2_textobx_title{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 55px;
+}
+.section2_textbox_description{
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 1.75em;
+    letter-spacing: 1px;
+}
+.section2_list{
+    position: relative;
+    float: left;
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    text-align: center;
+}
+.section2_list li{
+    padding: 60px;
+    line-height: 1.25em;
+    background-color: rgba(27, 27, 27, 0.75);
+}
+.section2_list_title{
+    font-weight: 500;
+    margin-bottom: 65px;
+}
+.section2_list_description{
+    font-weight: 300;
+    margin: 0 auto 65px;
+    width: 180px;
+}
+.section2_list_name{
+    font-weight: 500;
+}
+.section2_lsit_position{
+    font-weight: 300;
 }
