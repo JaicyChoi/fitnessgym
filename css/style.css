@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
 
 body{
     position: relative;
@@ -267,10 +268,132 @@ header{
     font-weight: 300;
     margin: 0 auto 65px;
     width: 180px;
+    text-align: left;
+    font-family: 'Noto Serif KR', serif;
 }
 .section2_list_name{
     font-weight: 500;
 }
 .section2_lsit_position{
+    font-family: 'Noto Serif KR', serif;
+}
+.section3{
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: black;
+}
+.section3_wrapper1{
+    position: relative;
+    float: left;
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 100px 0 130px;
+    text-align: center;
+}
+.section3_textbox{
+    position: relative;
+    float: left;
+    width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #00c0ff;
+    margin-bottom: 80px;
+}
+.section3_textbox_title{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.section3_textbox_description{
+    line-height: 1.7em;
+    letter-spacing: 0.7px;
+}
+.section3_textbox_list{
+    position: relative;
+    float: left;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 95px;
+    color: #00c0ff;
+}
+.section3_textbox_list li a{
+    text-decoration: none;
+    color: #00c0ff;
+}
+.section3_icon_list{
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    background-color: black;
+}
+.section3_icon_list li{
+    width: 180px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section3_icon_list_img{
+    height: 110px;
+}
+.section3_icon_list_img img{
+    height: 100%;
+}
+.section3_icon_list_title{
+    font-weight: 500;
+    font-size: 1.25em;
+}
+.section3_icon_list_description{
+    font-size: 0.875em;
     font-weight: 300;
+    letter-spacing: 0.7px;
+    line-height: 1.25em;
+}
+.section3_icon_list_name_wrapper{
+    font-size: 0.875em;
+    line-height: 1.2em;
+}
+.section3_icon_list_name{
+    font-weight: 500;
+}
+.section3_icon_list_position{
+    font-weight: 300;
+}
+.section3_wrapper2{
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #1b1b1b;
+    padding: 130px 0 60px; 
+}
+.section3_textbox2{
+    position: relative;
+    float: left;
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.section3_textbox2_description{
+    position: relative;
+    width: 67%;
+    margin: 0 auto;
+    font-size: 1.125em;
+    line-height: 1.5em;
+    margin-bottom: 55px;
+}
+.section3_textbox2_name{
+    position: relative;    
 }
