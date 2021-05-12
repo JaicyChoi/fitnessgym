@@ -19,7 +19,7 @@ header{
     position: relative;
     float: left;
     width: 100%;
-    background: url(../img/main_img1.jpg) no-repeat center;
+    background: url(../img/main_img1.jpg) no-repeat 50% 10%;
     background-size: cover;
 }
 .nav_bg{
@@ -130,4 +130,83 @@ header{
     font-size: 1.5em;
     font-weight: 500;
     cursor: pointer;
+}
+.content{
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: red;
+}
+.section1{
+    position: relative;
+    float: left;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+.section1_wrapper1{
+    position: relative;
+    float: left;
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+/*     background-color: blue; */
+}
+.section1_textbox{
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 170px 0 170px 0;
+    text-align: center;
+    width: 74%;
+    color: #3ea2d8;
+/*     background-color: white; */
+}
+.section1_textbox_title{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.section1_textbox_description{
+    font-size: 1em;
+    line-height: 1.8em;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+}
+.section1_wrapper2{
+    position: relative;
+    float: left;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1b1b1b;
+}
+.section1_list{
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: left;
+    margin: 135px 0 135px 0;
+}
+.section1_list li{
+    position: relative;
+    width: 30%;
+}
+.section1_list_title{
+    font-size: 1.125em;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+.section1_list_description{
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 1px;
 }
