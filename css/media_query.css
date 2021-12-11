@@ -1,3 +1,152 @@
 @media screen and (max-width:1200px){
-    
+    .nav_wrapper, .header_content, .section1_wrapper1,
+    .section1_list, .section2_wrapper, .section3_wrapper1,
+    .section3_textbox2, .section4_textbox2_wrapper,
+    .section5_wrapper, .section6_textbox1_wrapper, .section6_wrapper2, .footer_wrapper{
+        width: 97%;
+    }
+    .section4_wrapper1{
+        width: 100%;
+    }
+    .section4_textbox1_title, .section4_textbox1_description{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:980px){
+    .nav_wrapper{
+        height: 50px;
+    }
+    .pc_nav{
+        font-size: 1.25em;
+    }
+    .main_menu li{
+        position: relative;
+        float: left;
+        margin-right: 40px;
+    }
+    .header_content{
+        margin-top: 245px;
+        padding-bottom: 145px;
+/*         background-color: gray; */
+    }
+    .intro{
+        font-size: 10em;
+    }
+    .intro_text_wrapper{
+        margin-top: 55px;
+    }
+    .intro_text{
+        font-size: 1.125em;
+        width: 70%;
+    }
+    .intro_button{
+        margin-top: 80px;
+        width: 240px;
+        height: 55px;
+        font-size: 1.375em;
+    }
+    .section2_list{
+        gap: 10px;
+    }
+    .section2_list li{
+        padding: 30px;
+        line-height: 1.25em;
+    }
+    .section2_list_title{
+        font-size: 0.875em;
+        margin-bottom: 50px;
+    }
+    .section2_list_description{
+        font-size: 0.875em;
+        margin: 0 auto 40px;
+    }
+    .section2_list_name, .section2_lsit_position{
+        font-size: 0.875em;
+    }
+    .section4_wrapper1{
+        height: 550px;
+    }
+    .social{
+        width: 300px;
+    }
+    .social_title{
+        font-size: 1.125em;
+        margin-bottom: 18px;
+    }
+    .social_description{
+        line-height: 1.125em;
+        margin-bottom: 18px
+    }
+    .footer_menu{
+        font-size: 1em;
+        margin-right: 85px;
+    }
+}
+@media screen and (max-width:768px){
+    .pc_nav{
+        display: none;
+    }
+    .section2_list{
+        gap: 5px;
+    }
+    .section2_list li{
+        padding: 15px;
+    }
+    .section2_list_title{
+        margin-bottom: 30px;
+    }
+    .section2_list_description{
+        width: 160px;
+    }
+    .section3_textbox, .section6_textbox2{
+        width: 100%;
+    }
+    .section3_textbox_title{
+        font-size: 1.25em;
+    }
+    .section3_textbox_description{
+        line-height: 1.5em;
+        font-size: 0.95em;
+        width: 90%;
+        position: relative;
+        float: left;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .section3_icon_list_img{
+        height: 85px;
+    }
+    .section3_wrapper2{
+        padding: 100px 0 60px; 
+    }
+    .section3_textbox2_description{
+        width: 80%;
+        font-size: 1em;
+        margin-bottom: 50px;
+    }
+    .section3_textbox2_name{
+        font-size: 0.875em;    
+    }
+    .section4_textbox1_title{
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    .section4_textbox1_description{
+        width: 70%;
+    }
+    .social{
+        width: 210px;
+    }
+    .social_title{
+        font-size: 1em;
+        margin-bottom: 18px;
+    }
+    .social_description{
+        line-height: 1em;
+        margin-bottom: 18px
+    }
+    .footer_menu{
+        font-size: 1em;
+        margin-right: 60px;
+    }
 }

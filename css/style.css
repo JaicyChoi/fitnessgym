@@ -66,6 +66,48 @@ header{
     color: #00c0ff;
     text-decoration: none;
 }
+.mobile_nav_icon{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 100%;
+}
+.mobile_nav_icon img{
+    height: 100%;
+}
+.mobile_nav_wapper{
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+}
+.mobile_nav_wapper:after{
+    content: '';
+    position: fixed;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+}
+.mobile_nav{
+    position: relative;
+    float: left;
+    list-style: none;
+    left: 35px;
+    top: 40px;
+    font-size: 1;
+/*     background-color: red; */
+}
+.mobile_nav li{
+    position: relative;
+    margin-bottom: 40px;
+}
+.mobile_nav li a{
+    color: black;
+    text-decoration: none;
+}
 .header_content{
     position: relative;
     float: left;
