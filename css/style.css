@@ -10,6 +10,9 @@ body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
 }
+body.lock{
+    overflow: hidden;
+}
 .hidden{
     width: 1px;
     height: 1px;
@@ -29,7 +32,12 @@ header{
     float: left;
     background-color: black;
     width: 100%;
-    margin-top: 40px;
+/*     margin-top: 40px; */
+    z-index: 1;
+}
+.nav_bg.fixed{
+    position: fixed;
+    top: 0;
 }
 .nav_wrapper{
     width: 1200px;
@@ -66,6 +74,10 @@ header{
 .main_menu li a{
     color: #00c0ff;
     text-decoration: none;
+    transition: all .5s ease;
+}
+.main_menu li a:hover{
+    color: white;
 }
 .mobile_nav_icon{
     position: absolute;
@@ -83,20 +95,21 @@ header{
     height: 100%;
     right: 0;
     background-color: #00c0ff;
-    z-index: 1;
+    z-index: -1;
     transition: all .3s ease-in-out;
     opacity: 0;
     transform: translateX(100%);
 }
 .mobile_nav_wapper.show{
+    z-index: 1;
     opacity: 1;
     transform: translateX(0);
 }
 .mobile_nav_wapper:after{
     content: '';
     position: fixed;
-    left: 0;
-    width: 50%;
+    left: -100%;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .75);
 }
@@ -193,6 +206,12 @@ header{
     font-size: 1.5em;
     font-weight: 600;
     cursor: pointer;
+    transition: all .5s ease;
+}
+.intro_button:hover{
+    background-color: rgba(0, 192, 255, .85);
+    color: white;
+    transform: translateX(-50%) scale(93%);
 }
 .content{
     position: relative;
@@ -321,6 +340,13 @@ header{
     padding: 60px;
     line-height: 1.25em;
     background-color: rgba(27, 27, 27, 0.75);
+    transition: all .3s ease;
+}
+.section2_list li:hover{
+    transform: translate(-5px, -5px);
+    color: black;
+    background-color: rgba(255, 255, 255, .55);
+    box-shadow: 7px 7px 0px 0px white;
 }
 .section2_list_title{
     font-weight: 500;
@@ -540,7 +566,7 @@ header{
 }
 .section4_textbox2_btn{
     margin-top: 50px;
-    font-size: 1.25em;
+    font-size: 1.25em;  
     width: 165px;
     height: 45px;
     color: #00c0ff;
@@ -549,6 +575,12 @@ header{
     font-weight: 500;
     background-color: rgba(255, 255, 255, 0.75);
     cursor: pointer;
+    transition: all .5s ease;
+}
+.section4_textbox2_btn:hover{
+    background-color: rgba(0, 192, 255, .85);
+    color: white;
+    transform: scale(90%);
 }
 .section5{
     position: relative;

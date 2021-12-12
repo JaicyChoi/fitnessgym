@@ -98,6 +98,10 @@
     .section2_list li{
         padding: 15px;
     }
+    .section2_list li:hover{
+        transform: translate(-3px, -3px);
+        box-shadow: 5px 5px 0px 0px white;
+    }
     .section2_list_title{
         margin-bottom: 30px;
     }
