@@ -6,6 +6,7 @@ body{
     position: relative;
     float: left;
     width: 100%;
+    min-width: 480px;
     background-color: black;
     font-family: 'Roboto', sans-serif;
 }
@@ -71,6 +72,7 @@ header{
     right: 0;
     width: 50px;
     height: 100%;
+    display: none;
 }
 .mobile_nav_icon img{
     height: 100%;
@@ -80,8 +82,15 @@ header{
     width: 50%;
     height: 100%;
     right: 0;
-    background-color: white;
+    background-color: #00c0ff;
     z-index: 1;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    transform: translateX(100%);
+}
+.mobile_nav_wapper.show{
+    opacity: 1;
+    transform: translateX(0);
 }
 .mobile_nav_wapper:after{
     content: '';
@@ -90,6 +99,17 @@ header{
     width: 50%;
     height: 100%;
     background-color: rgba(0, 0, 0, .75);
+}
+.close_btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.close_btn img{
+    width: 100%;
 }
 .mobile_nav{
     position: relative;
@@ -716,7 +736,6 @@ footer:after{
     float: right;
     display: flex;
     flex-direction: row;
-/*     background-color: hotpink; */
 }
 .footer_menu{
     font-size: 1.125em;
