@@ -259,11 +259,11 @@
     }
     .section4_img_wrapper{
         position: absolute;
-        width: 100%;
         z-index: -1;
-/*         height: 100%; */
+        width: 100%;
     }
     .section4_img_wrapper img{
+        object-fit: cover;
         width: 100%;
         opacity: .35;
     }
