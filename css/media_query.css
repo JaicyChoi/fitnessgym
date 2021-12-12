@@ -86,6 +86,12 @@
     .nav_bg{
         margin-top: 0;
     }
+    .nav_wrapper{
+        height: 70px;
+    }
+    .mobile_nav_icon{
+        right: 10px;
+    }
     .pc_nav{
         display: none;
     }

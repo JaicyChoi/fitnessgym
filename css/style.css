@@ -34,10 +34,12 @@ header{
     width: 100%;
 /*     margin-top: 40px; */
     z-index: 1;
+    transition: all .3s ease;
 }
 .nav_bg.fixed{
     position: fixed;
     top: 0;
+    background-color: rgba(110, 110, 110, .9);
 }
 .nav_wrapper{
     width: 1200px;
@@ -95,13 +97,12 @@ header{
     height: 100%;
     right: 0;
     background-color: #00c0ff;
-    z-index: -1;
+    z-index: 1;
     transition: all .3s ease-in-out;
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(200%);
 }
 .mobile_nav_wapper.show{
-    z-index: 1;
     opacity: 1;
     transform: translateX(0);
 }
@@ -162,7 +163,7 @@ header{
     position: relative;
     float: left;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
     font-family: 'Catamaran', sans-serif;
     font-size: 11em;
     font-weight: bold;
@@ -171,6 +172,7 @@ header{
     -webkit-text-stroke-width: 2.5px;
     -webkit-text-stroke-color: white;
 /*     background-color: blue; */
+    animation: intro 1.5s linear;
 }
 .intro_text_wrapper{
     position: relative;
@@ -190,6 +192,9 @@ header{
     text-align: center;
     font-weight: 300;
 /*     background-color: blue; */
+    animation: intro 1.5s linear;
+    animation-delay: 1s;
+    opacity: 0;
 }
 .intro_button{
     position: relative;
@@ -207,6 +212,9 @@ header{
     font-weight: 600;
     cursor: pointer;
     transition: all .5s ease;
+    animation: intro 1.5s linear;
+    animation-delay: 2s;
+    opacity: 0;
 }
 .intro_button:hover{
     background-color: rgba(0, 192, 255, .85);
@@ -248,12 +256,21 @@ header{
     font-size: 1.5em;
     font-weight: 500;
     margin-bottom: 50px;
+    opacity: 0;
 }
 .section1_textbox_description{
     font-size: 1em;
     line-height: 1.8em;
     letter-spacing: 1.5px;
     font-weight: 300;
+    opacity: 0;
+}
+.section1_textbox_title.show_text{
+    animation: show_text 1s linear;
+}
+.section1_textbox_description.show_text{
+    animation: show_text 1s linear;
+    animation-delay: .5s;
 }
 .section1_wrapper2{
     position: relative;
@@ -279,6 +296,23 @@ header{
 .section1_list li{
     position: relative;
     width: 30%;
+    opacity: 0;
+}
+.section1_list li:nth-child(1).show_text{
+    animation: show_text 1s linear;
+}
+.section1_list li:nth-child(2).show_text{
+    animation: show_text 1s linear;
+    animation-delay: .5s
+}
+.section1_list li:nth-child(3).show_text{
+    animation: show_text 1s linear;
+    animation-delay: 1s
+}
+.section1_list li:nth-child(1).show_text.opacity,
+.section1_list li:nth-child(2).show_text.opacity,
+.section1_list li:nth-child(3).show_text.opacity{
+    opacity: 1;
 }
 .section1_list_title{
     font-size: 1.125em;
@@ -786,4 +820,7 @@ footer:after{
 }
 .footer_menu_list li:last-child{
     margin-bottom: 0;
+}
+.opacity{
+    opacity: 1;
 }
