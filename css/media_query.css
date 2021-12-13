@@ -170,6 +170,9 @@
     .nav_wrapper{
         height: 45px;
     }
+    .mobile_nav_icon{
+        right: 0px;
+    }
     .header_content{
         margin-top: 180px;
         padding-bottom: 120px;
@@ -337,31 +340,21 @@
         font-size: 6em;
     }
     .section1_list{
-        flex-direction: column;
         margin: 100px 0;
-        text-align: center;
     }
     .section1_list li{
         position: relative;
-        width: 90%;
-        margin-bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
     }
     .section1_list li:last-child{
         margin-bottom: 0;
     }
     .section1_list_title{
         font-size: 1em;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .section1_list_description{
         font-size: 0.875em;
         line-height: 1.25em;
-    }
-    .section2_list{
-        gap: 5px;
-        grid-template-columns: 1fr 1fr;
     }
     .section2_list_title{
         margin-bottom: 25px;
