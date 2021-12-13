@@ -22,6 +22,11 @@ const section4_textbox1_description = document.querySelector('.section4_textbox1
 const section4_textbox2_title = document.querySelector('.section4_textbox2_title');
 const section4_textbox2_description = document.querySelector('.section4_textbox2_description');
 const section4_textbox2_btn = document.querySelector('.section4_textbox2_btn');
+const section5_textbox = document.querySelectorAll('.section5_textbox');
+const section5_img_wrapper_img = document.querySelectorAll('.section5_img_wrapper>img');
+const section6_textbox1 = document.querySelectorAll('.section6_textbox1');
+const section6_textbox2_description = document.querySelector('.section6_textbox2_description');
+const section6_textbox2_name = document.querySelector('.section6_textbox2_name');
 
 mobile_nav_icon.addEventListener('click', () => {
     mobile_nav_wapper.classList.add('show');
@@ -107,7 +112,7 @@ window.addEventListener('scroll', () => {
             section2_list_li[5].classList.add('opacity');
         },3500);
     }
-    if( document.documentElement.scrollTop >= 2600 ){
+    if( document.documentElement.scrollTop >= 2500 ){
         section3_textbox_title.classList.add('show_text');
         section3_textbox_description.classList.add('show_text');
         section3_textbox_list.classList.add('show_text');
@@ -135,7 +140,7 @@ window.addEventListener('scroll', () => {
             section3_icon_list_li[2].classList.add('opacity');
         },3500);
     }
-    if( document.documentElement.scrollTop >= 3500 ){
+    if( document.documentElement.scrollTop >= 3400 ){
         section3_textbox2_description.classList.add('show_text');
         section3_textbox2_name.classList.add('show_text');
 
@@ -146,7 +151,7 @@ window.addEventListener('scroll', () => {
             section3_textbox2_name.classList.add('opacity');
         },1500);
     }
-    if( document.documentElement.scrollTop >= 3800 ){
+    if( document.documentElement.scrollTop >= 3700 ){
         section4_textbox1_title.classList.add('show_text');
         section4_textbox1_description.classList.add('show_text');
 
@@ -155,7 +160,7 @@ window.addEventListener('scroll', () => {
             section4_textbox1_description.classList.add('opacity');
         },1000);
     }
-    if( document.documentElement.scrollTop >= 4500 ){
+    if( document.documentElement.scrollTop >= 4200 ){
         section4_textbox2_title.classList.add('show_text');
         section4_textbox2_description.classList.add('show_text');
         section4_textbox2_btn.classList.add('show_text');
@@ -169,5 +174,58 @@ window.addEventListener('scroll', () => {
         setTimeout(()=>{
             section4_textbox2_btn.classList.add('opacity');
         },2000);
+    }
+    if( document.documentElement.scrollTop >= 4800 ){
+        section5_textbox[0].classList.add('show_text');
+        section5_img_wrapper_img[0].classList.add('show_icon');
+
+        setTimeout(()=>{
+            section5_textbox[0].classList.add('opacity');
+            section5_img_wrapper_img[0].classList.add('opacity');
+        },1000);
+    }
+    if( document.documentElement.scrollTop >= 5100 ){
+        section5_textbox[1].classList.add('show_text');
+        section5_img_wrapper_img[1].classList.add('show_icon');
+
+        setTimeout(()=>{
+            section5_textbox[1].classList.add('opacity');
+            section5_img_wrapper_img[1].classList.add('opacity');
+        },1000);
+    }
+    if( document.documentElement.scrollTop >= 5400 ){
+        section5_textbox[2].classList.add('show_text');
+        section5_img_wrapper_img[2].classList.add('show_icon');
+
+        setTimeout(()=>{
+            section5_textbox[2].classList.add('opacity');
+            section5_img_wrapper_img[2].classList.add('opacity');
+        },1000);
+    }
+    if( document.documentElement.scrollTop >= 6000 ){
+        section6_textbox1[0].classList.add('show_text');
+        section6_textbox1[1].classList.add('show_text');
+        section6_textbox1[2].classList.add('show_text');
+
+        setTimeout(()=>{
+            section6_textbox1[0].classList.add('opacity');
+        },1000);
+        setTimeout(()=>{
+            section6_textbox1[1].classList.add('opacity');
+        },1500);
+        setTimeout(()=>{
+            section6_textbox1[2].classList.add('opacity');
+        },2000);
+    }
+    if( document.documentElement.scrollTop >= 6200 ){
+        section6_textbox2_description.classList.add('show_text');
+        section6_textbox2_name.classList.add('show_text');
+
+        setTimeout(()=>{
+            section6_textbox2_description.classList.add('opacity');
+        },1000);
+        setTimeout(()=>{
+            section6_textbox2_name.classList.add('opacity');
+        },1500);
     }
 });

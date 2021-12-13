@@ -18,6 +18,16 @@
         transform: translateY(0);
     }
 }
+@keyframes show_text3{
+    0%{
+        opacity: 0;
+        transform: translate(-50%, -25px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
 @keyframes show_list{
     0%{
         opacity: 0;
@@ -26,5 +36,23 @@
     100%{
         opacity: 1;
         transform: translate(0, 0);
+    }
+}
+@keyframes show_list2{
+    0%{
+        opacity: 0;
+        transform: translate(-50%, -65%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes show_icon{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
