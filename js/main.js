@@ -1,4 +1,5 @@
 const body = document.querySelector('body');
+const header = document.querySelector('header');
 const nav_bg = document.querySelector('.nav_bg');
 const mobile_nav_icon = document.querySelector('.mobile_nav_icon');
 const mobile_nav_wapper = document.querySelector('.mobile_nav_wapper');
@@ -27,7 +28,10 @@ const section5_img_wrapper_img = document.querySelectorAll('.section5_img_wrappe
 const section6_textbox1 = document.querySelectorAll('.section6_textbox1');
 const section6_textbox2_description = document.querySelector('.section6_textbox2_description');
 const section6_textbox2_name = document.querySelector('.section6_textbox2_name');
+const top_btn_wrapper = document.querySelector('.top_btn_wrapper');
+const top_btn = document.querySelector('.top_btn');
 
+//mobile menu controll
 mobile_nav_icon.addEventListener('click', () => {
     mobile_nav_wapper.classList.add('show');
     body.classList.add('lock');
@@ -37,6 +41,7 @@ close_btn.addEventListener('click', () => {
     body.classList.remove('lock');
 });
 
+//intro text show
 setTimeout(() => {
     intro_text.classList.add('opacity');
 }, 2500);
@@ -44,7 +49,12 @@ setTimeout(() => {
     intro_button.classList.add('opacity');
 }, 3500);
 
+//scroll animation controll
 window.addEventListener('scroll', () => {
+    if( document.documentElement.scrollTop > 0 )
+        top_btn_wrapper.classList.add('show');
+    else
+        top_btn_wrapper.classList.remove('show');
     if( document.documentElement.scrollTop >= 55 ){
         nav_bg.classList.add('fixed');
     }
@@ -114,7 +124,10 @@ window.addEventListener('scroll', () => {
     }
     if( document.documentElement.scrollTop >= 2500 ){
         section3_textbox_title.classList.add('show_text');
-        section3_textbox_description.classList.add('show_text');
+        if( window.innerWidth <= 768 )
+            section3_textbox_description.classList.add('show_text3');
+        else
+            section3_textbox_description.classList.add('show_text');
         section3_textbox_list.classList.add('show_text');
         section3_icon_list_li[0].classList.add('show_text');
         section3_icon_list_li[1].classList.add('show_text');
@@ -228,4 +241,9 @@ window.addEventListener('scroll', () => {
             section6_textbox2_name.classList.add('opacity');
         },1500);
     }
+});
+
+//top buttom controll
+top_btn.addEventListener('click', ()=>{
+    header.scrollIntoView({behavior: "smooth"})
 });
