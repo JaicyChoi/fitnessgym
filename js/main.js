@@ -32,25 +32,25 @@ const top_btn_wrapper = document.querySelector('.top_btn_wrapper');
 const top_btn = document.querySelector('.top_btn');
 
 //mobile menu controll
-mobile_nav_icon.addEventListener('click', () => {
+mobile_nav_icon.addEventListener('click', function(){
     mobile_nav_wapper.classList.add('show');
     body.classList.add('lock');
 });
-close_btn.addEventListener('click', () => {
+close_btn.addEventListener('click', function(){
     mobile_nav_wapper.classList.remove('show');
     body.classList.remove('lock');
 });
 
 //intro text show
-setTimeout(() => {
+setTimeout(function(){
     intro_text.classList.add('opacity');
 }, 2500);
-setTimeout(() => {
+setTimeout(function(){
     intro_button.classList.add('opacity');
 }, 3500);
 
 //scroll animation controll
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', function(){
     if( document.documentElement.scrollTop > 0 )
         top_btn_wrapper.classList.add('show');
     else
@@ -65,10 +65,10 @@ window.addEventListener('scroll', () => {
         section1_textbox_title.classList.add('show_text');
         section1_textbox_description.classList.add('show_text');
 
-        setTimeout(() => {
+        setTimeout(function(){
             section1_textbox_title.classList.add('opacity');
         },1000);
-        setTimeout(() => {
+        setTimeout(function(){
             section1_textbox_description.classList.add('opacity');
         },1500);
     }
@@ -77,13 +77,13 @@ window.addEventListener('scroll', () => {
         section1_list_li[1].classList.add('show_text');
         section1_list_li[2].classList.add('show_text');
 
-        setTimeout(() => {
+        setTimeout(function(){
             section1_list_li[0].classList.add('opacity');
         },1000);
-        setTimeout(() => {
+        setTimeout(function(){
             section1_list_li[1].classList.add('opacity');
         },1500);
-        setTimeout(() => {
+        setTimeout(function(){
             section1_list_li[2].classList.add('opacity');
         },2000);
     }
@@ -91,10 +91,10 @@ window.addEventListener('scroll', () => {
         section2_textobx_title.classList.add('show_text');
         section2_textbox_description.classList.add('show_text');
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section2_textobx_title.classList.add('opacity');
         } ,1000);
-        setTimeout(()=>{
+        setTimeout(function(){
             section2_textbox_description.classList.add('opacity');
         },1500);
     }
@@ -103,22 +103,22 @@ window.addEventListener('scroll', () => {
             section2_list_li[i].classList.add('show_list');
         }
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section2_list_li[0].classList.add('opacity');
         },1000);
-        setTimeout(()=>{
+        setTimeout(function(){
             section2_list_li[1].classList.add('opacity');
         },1500);
-        setTimeout(()=>{
+        setTimeout(function(){
             section2_list_li[2].classList.add('opacity');
         },2000);
-        setTimeout(()=>{
+        setTimeout(function(){
             section2_list_li[3].classList.add('opacity');
         },2500);
-        setTimeout(()=>{
+        setTimeout(function(){
             section2_list_li[4].classList.add('opacity');
         },3000);
-        setTimeout(()=>{
+        setTimeout(function(){
             section2_list_li[5].classList.add('opacity');
         },3500);
     }
@@ -133,23 +133,23 @@ window.addEventListener('scroll', () => {
         section3_icon_list_li[1].classList.add('show_text');
         section3_icon_list_li[2].classList.add('show_text');
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section3_textbox_title.classList.add('opacity');
         },1000);
-        setTimeout(()=>{
+        setTimeout(function(){
             section3_textbox_description.classList.add('opacity');
         },1500)
-        setTimeout(()=>{
+        setTimeout(function(){
             section3_textbox_list.classList.add('opacity');
         },2000)
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section3_icon_list_li[0].classList.add('opacity');
         },2500);
-        setTimeout(()=>{
+        setTimeout(function(){
             section3_icon_list_li[1].classList.add('opacity');
         },3000);
-        setTimeout(()=>{
+        setTimeout(function(){
             section3_icon_list_li[2].classList.add('opacity');
         },3500);
     }
@@ -157,10 +157,10 @@ window.addEventListener('scroll', () => {
         section3_textbox2_description.classList.add('show_text');
         section3_textbox2_name.classList.add('show_text');
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section3_textbox2_description.classList.add('opacity');
         },1000);
-        setTimeout(()=>{
+        setTimeout(function(){
             section3_textbox2_name.classList.add('opacity');
         },1500);
     }
@@ -168,7 +168,7 @@ window.addEventListener('scroll', () => {
         section4_textbox1_title.classList.add('show_text');
         section4_textbox1_description.classList.add('show_text');
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section4_textbox1_title.classList.add('opacity');
             section4_textbox1_description.classList.add('opacity');
         },1000);
@@ -178,13 +178,13 @@ window.addEventListener('scroll', () => {
         section4_textbox2_description.classList.add('show_text');
         section4_textbox2_btn.classList.add('show_text');
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section4_textbox2_title.classList.add('opacity');
         },1000);
-        setTimeout(()=>{
+        setTimeout(function(){
             section4_textbox2_description.classList.add('opacity');
         },1500);
-        setTimeout(()=>{
+        setTimeout(function(){
             section4_textbox2_btn.classList.add('opacity');
         },2000);
     }
@@ -192,7 +192,7 @@ window.addEventListener('scroll', () => {
         section5_textbox[0].classList.add('show_text');
         section5_img_wrapper_img[0].classList.add('show_icon');
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section5_textbox[0].classList.add('opacity');
             section5_img_wrapper_img[0].classList.add('opacity');
         },1000);
@@ -201,7 +201,7 @@ window.addEventListener('scroll', () => {
         section5_textbox[1].classList.add('show_text');
         section5_img_wrapper_img[1].classList.add('show_icon');
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section5_textbox[1].classList.add('opacity');
             section5_img_wrapper_img[1].classList.add('opacity');
         },1000);
@@ -210,7 +210,7 @@ window.addEventListener('scroll', () => {
         section5_textbox[2].classList.add('show_text');
         section5_img_wrapper_img[2].classList.add('show_icon');
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section5_textbox[2].classList.add('opacity');
             section5_img_wrapper_img[2].classList.add('opacity');
         },1000);
@@ -220,13 +220,13 @@ window.addEventListener('scroll', () => {
         section6_textbox1[1].classList.add('show_text');
         section6_textbox1[2].classList.add('show_text');
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section6_textbox1[0].classList.add('opacity');
         },1000);
-        setTimeout(()=>{
+        setTimeout(function(){
             section6_textbox1[1].classList.add('opacity');
         },1500);
-        setTimeout(()=>{
+        setTimeout(function(){
             section6_textbox1[2].classList.add('opacity');
         },2000);
     }
@@ -234,16 +234,16 @@ window.addEventListener('scroll', () => {
         section6_textbox2_description.classList.add('show_text');
         section6_textbox2_name.classList.add('show_text');
 
-        setTimeout(()=>{
+        setTimeout(function(){
             section6_textbox2_description.classList.add('opacity');
         },1000);
-        setTimeout(()=>{
+        setTimeout(function(){
             section6_textbox2_name.classList.add('opacity');
         },1500);
     }
 });
 
 //top buttom controll
-top_btn.addEventListener('click', ()=>{
+top_btn.addEventListener('click', function(){
     header.scrollIntoView({behavior: "smooth"})
 });

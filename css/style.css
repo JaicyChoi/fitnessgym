@@ -91,6 +91,9 @@ header{
 .mobile_nav_icon img{
     height: 100%;
 }
+.mobile_nav_icon img:hover{
+    cursor: pointer;
+}
 .mobile_nav_wapper{
     position: fixed;
     width: 50%;
@@ -219,7 +222,7 @@ header{
 .intro_button:hover{
     background-color: rgba(0, 192, 255, .85);
     color: white;
-    transform: translateX(-50%) scale(93%);
+    transform: translateX(-50%) scale(.93, .93);
 }
 .content{
     position: relative;
@@ -374,6 +377,8 @@ header{
     float: left;
     width: 100%;
     color: white;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
@@ -386,6 +391,31 @@ header{
     transition: all .3s ease;
     opacity: 0;
 }
+.section2_list li:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+.section2_list li:nth-child(2){
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+.section2_list li:nth-child(3){
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+.section2_list li:nth-child(4){
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+.section2_list li:nth-child(5){
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+}
+.section2_list li:nth-child(6){
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+}
+
 .section2_list li:nth-child(1).show_list{
     animation: show_list 1s linear;
 }
@@ -724,7 +754,7 @@ header{
 .section4_textbox2_btn:hover{
     background-color: rgba(0, 192, 255, .85);
     color: white;
-    transform: scale(90%);
+    transform: scale(.9, .9);
 }
 .section5{
     position: relative;
@@ -1015,7 +1045,7 @@ footer:after{
     border-radius: 50%;
     background: url(../img/top.png);
     background-size: contain;
-    background-color: rgba(0, 192, 255);
+    background-color: rgb(0, 192, 255);
     border: 2px solid #1b1b1b;
     box-sizing: border-box;
     cursor: pointer;

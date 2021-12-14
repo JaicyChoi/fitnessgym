@@ -194,8 +194,25 @@
         font-size: 1.25em;
     }
     .section2_list{
+        -ms-grid-columns: 1fr 1fr;
         gap: 5px;
         grid-template-columns: 1fr 1fr;
+    }
+    .section2_list li:nth-child(3){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+    .section2_list li:nth-child(4){
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+    .section2_list li:nth-child(5){
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    .section2_list li:nth-child(6){
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
     }
     .section1_textbox{
         margin: 150px 0;
