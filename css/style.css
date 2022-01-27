@@ -134,7 +134,7 @@ header{
     list-style: none;
     left: 35px;
     top: 40px;
-    font-size: 1;
+    /* font-size: 1; */
 /*     background-color: red; */
 }
 .mobile_nav li{
